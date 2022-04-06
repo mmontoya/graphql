@@ -1,0 +1,7 @@
+build
+
+# Ignore all HTML files:
+*.html
+
+# Ignore .env files:
+.env
