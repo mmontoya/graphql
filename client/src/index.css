@@ -1,0 +1,199 @@
+/* Install Fonts */
+@font-face {
+    font-family: 'Core Sans C';
+    src: url('./fonts/core-sans-c-400.woff2');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Core Sans C Italic';
+    src: url('./fonts/core-sans-c-400-italic.woff2');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Core Sans C Bold';
+    src: url('./fonts/core-sans-c-600.woff2');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Core Sans C Italic Bold';
+    src: url('./fonts/core-sans-c-600-italic.woff2');
+    font-weight: 600;
+}
+
+/* Globals */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Core Sans C', sans-serif;
+    background: #eee;
+    height: 100vh;
+    padding: 0;
+    margin: 10px;
+}
+
+#main h1 {
+    color: #444;
+    text-align: center;
+}
+
+#main {
+    padding: 0px;
+    width: 60%;
+    height: 80%;
+    overflow: auto;
+}
+
+#book-list {
+    padding: 0;
+}
+
+#book-list li {
+    display: inline-flex;
+    margin: 12px;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ff60b5;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #880e4f;
+    cursor: pointer;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    font-family: 'Core Sans C Bold';
+    font-weight: 600;
+}
+
+form {
+    background: #880e4f;
+    padding: 20px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 400px;
+    border-top: 1px solid #ff60b5;
+    border-right: 1px solid #ff60b5;
+}
+
+form label {
+    color: #fff;
+    text-align: right;
+    padding: 6px;
+    width: 120px;
+}
+form label:after {
+    content: ':';
+}
+
+form .field {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+    align-items: center;
+    justify-items: end;
+}
+
+form .field input {
+    padding: 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 200px;
+}
+
+form .field input:focus {
+    outline: 1px solid #ff60b5;
+}
+
+form .field select {
+    padding: 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 200px;
+    font-family: 'Core Sans C';
+}
+
+form .field option {
+    padding: 10px;
+}
+
+form .field select:focus {
+    outline: 1px solid #ff60b5;
+}
+
+form button {
+    background-color: #ff60b5;
+    border-radius: 50%;
+    font-family: 'Core Sans C';
+    font-size: 24px;
+    width: 33px;
+    outline: none;
+    border: none;
+    color: #eee;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    position: relative;
+    left: 90%;
+    bottom: 0;
+    margin-top: 10px;
+}
+
+form button:hover {
+    color: #eee;
+    background: #f82d99;
+}
+
+.book_title {
+    color: #ffffff;
+    font-size: 1em;
+    padding: 5px 2px;
+}
+
+.book_author {
+    color: #ff60b5;
+    font-size: 0.9em;
+    padding: 5px 2px;
+}
+
+.genre_heading {
+    color: #fff;
+    font-size: 0.8em;
+}
+
+.book_genre {
+    color: #ffa8d6;
+    font-size: 0.8em;
+}
+
+.other_books {
+    color: #ffa8d6;
+    font-size: 12px;
+    margin-left: 10px;
+    margin-top: 10px;
+    overflow: auto;
+}
+
+.field {
+    padding: 0.3em;
+}
+
+#book-details {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 40%;
+    height: 100%;
+    background: #880e4f;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
